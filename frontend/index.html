@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <title>Transcrição com IA</title>
-</head>
-<body>
-  <h1>Envie um vídeo para transcrição</h1>
-  <input type="file" id="videoFile" />
-  <button onclick="uploadFile()">Enviar</button>
-  <pre id="result"></pre>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Transcrição com IA</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Transcrição com IA</h1>
 
-  <script src="script.js"></script>
-</body>
+      <label for="videoFile" id="btnFileUpload">🎥 Escolher vídeo</label>
+      <input type="file" id="videoFile" />
+
+      <p id="fileName" class="file-name">Nenhum arquivo selecionado</p>
+
+      <button id="btnEnviar" onclick="uploadFile()">🚀 Enviar</button>
+
+      <p id="result">Aguardando transcrição<span id="dots"></span></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
