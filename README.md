@@ -52,7 +52,7 @@ model = whisper.load_model("base", device="cpu")
 python app.py
 ```
 
-## 🪟 **Windows**\
+## 🪟 **Windows**
 ### 1️⃣ Pré-requisitos
 - Python 3.8+
 - Git
